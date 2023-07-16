@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #40414e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #afafb3;
+  border-radius: 5px;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #5A196E, #291737);
+  min-height: 100vh;
+}
+
+main {
+  margin:  5rem 1rem 3rem 1rem;
+}
+
+form{
+  background-color: #fff;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1.4rem 1.2rem;
+  border-radius: 10px;
+}
+
+#create-form {
+  margin-top: 2.5rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+button {
+  padding: 11px 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#submit {
+  background-color: #CE18EC;
+  color: #fff;
+  width: 8rem;
+}
+
+#todos {
+  width: 70rem;
+  margin: 2rem auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.todo {
+  width: calc(33.39% - 30px);
+  padding: 30px 30px 10px 30px;
+  background-color: #24273D;
+  border-radius: 10px;
+}
+
+.task {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  word-break: break-all;
+}
+
+.status {
+  color: #fff;
+  font-size: 19px;
+  margin-bottom: 1.4rem;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #3425AC;
+  color: #fff;
+}
+
+@media screen and (max-width: 1300px) {
+  #todos {
+      width: 95%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+
+  .todo {
+      width: calc(50% - 20px);
+      padding: 30px 20px 10px 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+      width: 90%;
+      margin: 3rem auto;
+  }
+
+  input {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+  }
+
+  #submit {
+      width: 100%;
+      display: block;
+  }
+
+  #todos {
+      padding-left: 0;
+      width: 90%;
+  }
+
+  .todo {
+      width: 100%;
+      padding: 30px 30px 10px 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .todo{
+      width: 100%;
+      padding: 30px 20px 10px 20px;
+  }
+}
